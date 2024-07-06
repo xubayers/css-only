@@ -1,0 +1,307 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --btn-color: #52c303;
+    --brn-lite: rgba(82, 195, 3, 0.15);
+    --op-6: 0.6;
+    --op-7: 0.7;
+    --big: 35px;
+    --md: 16px;
+    --sm: 13px;
+}
+
+h1 {
+    letter-spacing: .8px;
+}
+
+p {
+    letter-spacing: .5px;
+    line-height: 1.4;
+}
+
+header {
+    height: 100vh;
+}
+
+.hero {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(0deg, #000000d0, transparent),url("../images/assets/hero-bg.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+    & p:nth-child(1){
+        font-size: 20px;
+        text-transform: capitalize;
+        color: rgba(255, 255, 255, 0.871);
+        margin-bottom: 5px;
+    }
+
+    & h1 {
+        font-size: 48px;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    & p:nth-child(3) {
+        opacity: var(--op-7);
+        font-size: var(--sm);
+        text-align: center;
+        margin: 17px 0;
+    }
+
+    & button {
+        padding: 10px 16px;
+        text-transform: capitalize;
+        font-weight: bold;
+        background-color: var(--btn-color);
+        border: none;
+        color: rgba(255, 255, 255, 0.862);
+        border-radius: 3px;
+        letter-spacing: .6px;
+        cursor: pointer;
+    }
+ 
+}
+
+/* header end  */
+
+.sales-food {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+
+    & .title {
+        & p {
+            font-size: var(--md);
+        }
+        & h1 { 
+            font-size: var(--big);
+            margin: 10px 0 20px 0;
+        }
+    }
+
+    & .food-items {
+        display: flex;
+        gap: 15px;
+
+        & .item {
+            width: 300px;
+
+            & .img {
+                height: 200px;
+                width: 100%;
+            }
+
+            & .image1 {
+                background: url("../images/assets/pizza.png");
+                background-size: cover;
+            }
+            & .image2 {
+                background: url("../images/assets/biriyani.png");
+                background-size: cover;
+            }
+            & .image3 {
+                background: url("../images/assets/burger.png");
+                background-size: cover;
+            }
+            & p:nth-of-type(1) {
+                padding: 10px;
+                background-color: var(--brn-lite);
+                display: inline-block;
+                text-transform: capitalize;
+                margin: 15px 0;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            & h1 {
+                text-transform: capitalize;
+                margin: 8px 0;
+            }
+
+            & p {
+                font-size: var(--sm);
+            }
+        }
+
+       
+    }
+
+    & .btn-item {
+        margin-top: 25px;
+
+        & button {
+            padding: 10px 16px;
+            background-color: var(--btn-color);
+            border: none;
+            border-radius: 3px;
+            letter-spacing: .6px;
+            text-transform: capitalize;
+            color: rgba(255, 255, 255, 0.892);
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
+ 
+/* sales end  */
+
+.sec-3 {
+    height: 350px;
+    display: flex;
+    margin-top: 60px;
+    background-color: #f9f9f9d0;
+
+    & .full-img {
+        height: 100%;
+        width: 50%;
+        background: url(../images/assets/foods.png);
+    }
+
+    & .social-contant {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+
+       & h1 {
+            font-size: var(--big);
+        }
+
+       & p {
+            font-size: var(--sm);
+            margin: 15px 0 4px 0;
+        }
+
+        & p:nth-of-type(2) {
+            width: 100%;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            padding: 13px 0;
+            font-size: 18px;
+        }
+
+        & i {
+            font-size: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: all .2s linear;
+        }
+
+        & i:hover {
+            color: #52c303;
+        }
+    }
+}
+
+.single-food {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+
+    & .item {
+        width: 300px;
+        text-align: center;
+
+        & .img {
+            height: 200px;
+            width: 100%;
+        }
+
+        & .image {
+            background: url("../images/assets/pizza.png");
+            background-size: cover;
+        }
+        & p:nth-of-type(1) {
+            padding: 10px;
+            background-color: var(--brn-lite);
+            display: inline-block;
+            text-transform: capitalize;
+            margin: 15px 0;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        & h1 {
+            text-transform: capitalize;
+            margin: 8px 0;
+        }
+
+        & p {
+            font-size: var(--sm);
+        }
+
+        & button {
+            padding: 10px 16px;
+            background-color: var(--btn-color);
+            border: none;
+            border-radius: 3px;
+            letter-spacing: .6px;
+            text-transform: capitalize;
+            color: rgba(255, 255, 255, 0.892);
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    }   
+}
+
+footer {
+    background: linear-gradient(0deg, #ffffffd4, #ffffffcd),url("../images/assets/social-bg.png");
+    margin-top: 50px;
+    height: 60vh;
+    & div {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+    
+           & h1 {
+                font-size: var(--big);
+            }
+    
+           & p {
+                font-size: var(--sm);
+                margin: 15px 0 4px 0;
+            }
+    
+            & p:nth-of-type(2) {
+                width: 100%;
+                border-top: 1px solid gray;
+                border-bottom: 1px solid gray;
+                padding: 13px 0;
+                font-size: 18px;
+            }
+    
+            & i {
+                font-size: 20px;
+                margin-right: 10px;
+                cursor: pointer;
+                transition: all .2s linear;
+            }
+    
+            & i:hover {
+                color: #52c303;
+            }
+        }
+    }
