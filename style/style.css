@@ -22,3 +22,42 @@ p {
     letter-spacing: .4px;
     line-height: 1.5;
 }
+
+.container {
+    margin: 60px 100px;
+}
+
+.text-md {
+    font-size: 20px;
+}
+
+.text-lg {
+    font-size: 38.5px;
+}
+
+.text-sm {
+    font-size: 16px;
+}
+
+.text-lg2 {
+    font-size: 58px;
+}
+
+/* end */
+
+header div {
+    background: linear-gradient(to bottom, #000000, #00000000),url("../images/Banner Image.png");
+    height: 480px;
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    font-family: "Merriweather", serif;
+}
+
+header p { 
+    font-size: 27px;
+}
+
+
+
